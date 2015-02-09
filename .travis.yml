@@ -7,10 +7,10 @@ script: python setup.py test
 deploy:
   provider: pypi
   user: 2m
-  # Remove for deployment to official PyPi repo
-  server: https://testpypi.python.org/pypi
+  server: https://testpypi.python.org/pypi # Remove for deployment to official PyPi repo
   password:
-    secure: SvK0pdRqgQ7KRsw1TocFRlGcthn233bL4MQWflxF16/Iv5XCjWJRKldcuf3ls7fefVK6uhJGaFD2m1M1tihmskxblAowzQXl5VL+wpll6Sdyu1Zy8oikrOidI028jd4zcbofl0iHR2eMhX68bg2oXK+VG71YG6plIITQBb+g1e8=
+    # make sure to replace `%` to `%%` if you have them in your plain text password
+    secure: WNPwiVFTrNVCifYfzlTSOWDFsQrhp+BUUVn14ySYR6WP0FyqhPCrQNm9bkk9XIErFOP7JjoGT6gKry3M8aNhA82weTc1Xuk9JrhdDCtZpp0OsU8cZpw6zgYiX328zyJ0VSmvYXN0uW4wwg8fb6guCRr8ljwKIvTPsSaOo/BGo6M=
   on:
     tags: true
     all_branches: true # workaround for https://github.com/travis-ci/travis-ci/issues/1675
