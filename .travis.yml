@@ -11,5 +11,4 @@ deploy:
     secure: Xkugy3vtKcZ3qfxsJ7cgqUbYJG6zmDQTPGoR4YZqijv3c9G3o3eVXLwnuntSaWCc+qDOxjbe7PAuBWgFUzoWymGEkd05B2VPP/a++KI9kXUWJtQlAi1KknAXgGEcH1Pt0shq5uBi944xbHZ1qXHQIfYDxleMVDBIbBvf7Na7h90=
   on:
     tags: true
-    all_branches: true # workaround for https://github.com/travis-ci/travis-ci/issues/1675
     repo: 2m/test-pypi-deploy
